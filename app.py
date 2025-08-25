@@ -1,29 +1,3 @@
-import subprocess
-import sys
-
-def install_system_deps():
-    try:
-        # 安装 OpenCV 所需的系统级库（libGL、libgthread 等）
-        subprocess.check_call(
-            ["apt-get", "update", "-y"],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
-        subprocess.check_call(
-            ["apt-get", "install", "-y", "libgl1-mesa-glx", "libglib2.0-0"],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
-        print("系统依赖安装成功")
-    except Exception as e:
-        print(f"系统依赖安装警告: {e}")
-        pass
-
-# 仅在 Streamlit 云环境中执行（本地开发无需）
-if "STREAMLIT_RUNTIME" in os.environ:
-    install_system_deps()
-
-# 后续正常导入语句
 from PIL import Image
 import torch
 from torch.utils import data 
