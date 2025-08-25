@@ -6,6 +6,7 @@ tqdm==4.66.4
 streamlit==1.32.2
 Pillow==10.2.0
 efficientnet_pytorch==0.7.1
-pytorch_grad_cam==1.5.0
+grad_cam==1.5.0
+
 
 
