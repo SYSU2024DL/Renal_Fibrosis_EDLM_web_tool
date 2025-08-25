@@ -7,7 +7,7 @@ streamlit==1.42.0
 Pillow==11.0.0              
 efficientnet_pytorch==0.7.1 
 grad-cam==1.5.0    
-opencv-python==4.12.0.88
+
 
 
 
