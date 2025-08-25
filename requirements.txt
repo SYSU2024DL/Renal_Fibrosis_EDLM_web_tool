@@ -1,12 +1,13 @@
 Torch==2.6.0
 Torchvision==0.21.0
 Matplotlib==3.8.4
-numpy
+numpy==1.27.0
 tqdm==4.66.4
 streamlit==1.32.2
-Pillow
+Pillow==11.0.0
 efficientnet_pytorch==0.7.1
-grad_cam==1.5.0
+grad-cam==1.5.0
+
 
 
 
