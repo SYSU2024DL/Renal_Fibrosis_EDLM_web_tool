@@ -58,7 +58,7 @@ model = CombinedModel(num_classes)
 # 加载训练好的模型
 def load_model():
     try:
-        model.load_state_dict(torch.load('./14_dtrain_acc_0.993_verif_acc_0.966.pth', 
+        model.load_state_dict(torch.load('./EDLM.pth', 
                                         map_location=torch.device('cpu')))
         model.eval()  # 设置为评估模式
         return model
